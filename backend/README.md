@@ -10,6 +10,13 @@ source ./venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
+On macOS, you may instead have to run 
+```shell
+python3 -m virtualenv .venv
+source ./.venv/bin/activate
+pip install -r requirements.txt
+```
+
 ## Running
 
 To define environment variables, create a file called `.env` in this directory. Add any environment variables here:
@@ -21,6 +28,19 @@ JWT_SECRET=1234fdafasdf
 
 Then, run the app locally from this directory with
 
-```sh
+```shell
 flask run
+```
+
+On macOS, you may instead have to run the app locally with
+
+```shell
+python3 app.py
+```
+
+## Terminating
+
+Deactivate the virtual environment with
+```shell
+deactivate
 ```
