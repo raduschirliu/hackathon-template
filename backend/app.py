@@ -3,7 +3,7 @@ import psycopg2
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from src.models import db, User
+from src.models import db
 from src import util
 
 # Load environment variables
