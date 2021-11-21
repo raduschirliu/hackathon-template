@@ -22,7 +22,7 @@ pip install -r requirements.txt
 To define environment variables, create a file called `.env` in this directory. Add any environment variables here:
 
 ```
-DATABASE_URL=some/url/
+DATABASE_URL="postgresql+psycopg2://username:password@host:port/database-name"
 JWT_SECRET=1234fdafasdf
 ```
 
